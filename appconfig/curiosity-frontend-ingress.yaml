@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: curiosity-http-ingress
+  namespace: curiosityevents
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: web
+spec:
+  rules:
+    - host: localhost
+      http:
+        paths:
+          - path: /wiki/curiosity/
+            pathType: Prefix
+            backend:
+              service:
+                name: curiosityms-service-clusterip
+                port:
+                  number: 80
+          - path: /leaders/
+            pathType: Prefix
+            backend:
+              service:
+                name: consumerms-service-clusterip
+                port:
+                  number: 80

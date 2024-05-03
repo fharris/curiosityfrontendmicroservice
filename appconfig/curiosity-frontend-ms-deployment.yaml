@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: curiosity-frontend-deployment-ms
+  namespace: curiosityevents
+  labels:
+    tier: frontend
+spec:
+  selector:
+    matchLabels:
+      app: curiosity-frontend-ms
+  replicas: 2
+  strategy:
+    #rollingUpdate:
+    #  maxSurge: 25%
+    #  maxUnavailable: 25%
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: curiosity-frontend-ms
+        tier: frontend
+    spec:
+      containers:
+      - name: curiosityfrontend
+        image: localhost:5000/curiosityfrontendms:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+        envFrom:
+          - configMapRef:
+              name: curiosity-frontend-configmap-ms
+        #resources:
+        #  requests:
+        #    cpu: "4"
+        #    memory: "500Mi"
+        #  limits:
+        #    cpu: "8"
+        #    memory: "1000Mi"     
+      

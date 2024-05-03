@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: curiosity-frontend-configmap-ms
+  namespace: curiosityevents
+data:
+  REACT_APP_MY_VAR: "Microservices Demo 46"
+  REACT_APP_SERVER_CURIOSITY_IP: "localhost"
+  CURIOSITY_API_EXISTS: "false"
+  PAGE_AND_TOPICS_API_VERSION: "v4"
