@@ -4,11 +4,7 @@ Get the code from GitHub If you haven’t done so, get the code from the reposit
 git clone https://github.com/fharris/curiosityfrontendmicroservice
 
 ***1-Create the curiosityevents namespace***
-You can start by running the housekeeping-k8s script first to clean everything if this is not the first time you are doing the set-up. Change to the curiositymonolith folder and run the following commands:
 
-```
-./housekeeping-k8s.sh
-```
 
 If you just want to see the app running and leave the manual steps to study later just run the following script:
 
@@ -35,7 +31,7 @@ kubectl apply -f ./appconfig/.
 If all goes well, check that you have successfully deployed the application and the database with the following command:
 
 ```
-kubectl get pods -n curiositymonolith
+kubectl get pods -n curiosityevents
 ```
 
 You should be able to see the curiosity frontend pods running. We are running this example on a K3s Kubernetes local cluster with a Traefik ingress. 
