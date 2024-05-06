@@ -6,7 +6,7 @@ Fernando Harris
 
 Install the application manually
 
-[Manual deployment](./manual-deployment.md)
+[Manual deployment](./manualdeployment.md)
 
 **Automated deployment**
 
