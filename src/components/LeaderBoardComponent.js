@@ -1,4 +1,4 @@
-// Code adapted from M Macero Garcia open sources exercises
+// Code adapted from M Macero Garcia open sourced exercises
 
 import * as React from 'react';
 import ChampionshipApiClient from '../services/ChampionshipApiClient';
