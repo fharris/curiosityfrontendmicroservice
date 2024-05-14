@@ -1,3 +1,5 @@
+// Code adapted from M Macero Garcia open sources exercises
+
 import * as React from 'react';
 import ChampionshipApiClient from '../services/ChampionshipApiClient';
 import CuriosityApiClient from '../services/CuriosityApiClient';
