@@ -5,7 +5,7 @@ class ChampionshipApiClient {
 
     static GET_LEAGUE = '/league/';
 
-    static leagueTable(): Promise<Response> {
+    static leaderBoard(): Promise<Response> {
         return fetch(ChampionshipApiClient.SERVER_CHAMPIONSHIP_URL +
             ChampionshipApiClient.GET_LEAGUE);
     }
