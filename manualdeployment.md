@@ -55,4 +55,6 @@ You can use the application's core functionalities which are querying Wikipedia 
 
 ***4-Install the Championship Microservice***
 
-[Championship Microservice Installation Page](https://github.com/fharris/curiositychampionship/blob/main/manual-deployment.md)
+[Championship Microservice Installation Page](https://github.com/fharris/championshipmicroservice/blob/main/manual-deployment.md)
+
+
