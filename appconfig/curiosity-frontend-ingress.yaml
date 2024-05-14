@@ -17,7 +17,7 @@ spec:
                 name: curiosityms-service-clusterip
                 port:
                   number: 80
-          - path: /leaders/
+          - path: /league/
             pathType: Prefix
             backend:
               service:
