@@ -14,7 +14,7 @@ Move inside the curiosityfrontendmicroservice folder.
 If you just want to see the app running and leave the manual steps to study later just run the following script:
 
 ```
-./deploy-curiosityfrontend.sh
+./deploy-curiosity-frontend.sh
 ```
 
 If all goes well, you may jump to step 3 to run the application and ignore the rest of the steps.
